@@ -41,10 +41,3 @@ var win = [
  
 
 
-for (var i = 0; i < divs.length; i++) {
-    var box = divs[i]
-    box.addEventListener("click", function (boxClick) {
-        var box = event.target
-        box.classList.toggle('red-background') 
-        })
-    }
