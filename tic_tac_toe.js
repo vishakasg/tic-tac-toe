@@ -25,14 +25,29 @@ var  whosTurn = player1
 
 board.addEventListener("click", function (event) {
     var clickedBox = event.target
-    if (whosTurn === player1){
-        clickedBox.textContent = 'X'
+    
+    if (whosTurn === player1) {
+        clickedBox.textContent = 'X' 
+        whosTurn = player2
     } else {
-    clickedBox.textContent = 'O'
-    }})
+           clickedBox.textContent = 'O'
+           whosTurn = player1
+        }
+})
+
+//winning conditions
+for (var i = 1; i < 10; i++)
+if (b1 === X && b2 === X && b3 === X){
+    
+}
+
+
+
+
+
+   
     
 
-    
 
 
 
