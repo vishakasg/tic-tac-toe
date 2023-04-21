@@ -9,31 +9,38 @@ var b7 = document.querySelector('#box7')
 var b8 = document.querySelector('#box8')
 var b9 = document.querySelector('#box9')
 
-
-
-//  initialize a board with an array of nine empty strings. 
-// 'isGameActive' variable will be true until someone WINS or DRAW
-var board = ['', '', '', '', '', '', '', '', ''];
+//Initial State..
+// define two players as 'X and 'O' and created the empty (array) play board to start the game.
+//if boardFull variable is TRUE then play board is full and the game is end, and the playBoard array will hold the state of the game.
+//variable board is used to select the element on the grid
 var player1 ='X'
 var player2 ='O'
-var currentTurn = player1
-var isGameActive = true;
-var player1_won = 'WINNER';
-var player2_won= 'WINNER';
-var draw = 'DRAW THE GAME';
+var boardFull = false
+var playBoard = ['', '', '', '', '', '', '', '', ''];
 
 
-// WINNING CONDITIONS
-var win = [
-    [1, 2, 3],
-    [4, 5, 6],
-    [7, 8, 9],
-    [1, 4, 7],
-    [2, 5, 8],
-    [3, 6, 9],
-    [1, 5, 9],
-    [3, 5, 7]
-]
+// event listener
+var board = document.querySelector('.grid')
+var  whosTurn = player1
+
+board.addEventListener("click", function (event) {
+    var clickedBox = event.target
+    if (whosTurn === player1){
+        clickedBox.textContent = 'X'
+    } else {
+    clickedBox.textContent = 'O'
+    }})
+    
+
+    
+
+
+
+
+
+
+
+
 
 
 
