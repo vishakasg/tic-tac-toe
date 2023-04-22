@@ -27,6 +27,13 @@ label{
     text-align: center;
     padding: 20px;
 }
-.red-background{
-    background-color: red;
+h2{
+    
+    margin-top: 1em;
+    font-size: 2rem;
+    margin-bottom: 0.5em;
+    color: greenyellow;
+    background-color: darkslateblue;
+    text-align: center;
+
 }

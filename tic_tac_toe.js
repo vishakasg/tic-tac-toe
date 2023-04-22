@@ -21,25 +21,113 @@ var playBoard = ['', '', '', '', '', '', '', '', ''];
 
 // event listener
 var board = document.querySelector('.grid')
-var  whosTurn = player1
-
+var currentPlayer = player1
+var winnerMessage = document.querySelector('#winner')
 board.addEventListener("click", function (event) {
     var clickedBox = event.target
-    
-    if (whosTurn === player1) {
+    if (currentPlayer === player1) {
         clickedBox.textContent = 'X' 
-        whosTurn = player2
+        currentPlayer = player2
+        if (b1.textContent == 'X' && b2.textContent == 'X' && b3.textContent == 'X'){
+            winnerMessage.textContent = 'PLAYER 1 IS A WINNER'
+        } else if (b4.textContent == 'X' && b5.textContent == 'X' && b6.textContent == 'X'){
+            winnerMessage.textContent = 'PLAYER 1 IS A WINNER'
+            }  else if (b7.textContent == 'X' && b8.textContent == 'X' && b9.textContent == 'X'){
+                winnerMessage.textContent = 'PLAYER 1 IS A WINNER'
+                } else if (b1.textContent == 'X' && b4.textContent == 'X' && b7.textContent == 'X'){
+                    winnerMessage.textContent = 'PLAYER 1 IS A WINNER'
+                    } else if (b2.textContent == 'X' && b5.textContent == 'X' && b8.textContent == 'X'){
+                        winnerMessage.textContent = 'PLAYER 1 IS A WINNER'
+                        } else if (b3.textContent == 'X' && b6.textContent == 'X' && b9.textContent == 'X'){
+                            winnerMessage.textContent = 'PLAYER 1 IS A WINNER'
+                            } else if (b1.textContent == 'X' && b5.textContent == 'X' && b9 .textContent == 'X'){
+                                winnerMessage.textContent = 'PLAYER 1 IS A WINNER'
+                                } else if (b3.textContent == 'X' && b5.textContent == 'X' && b7.textContent == 'X'){
+                                    winnerMessage.textContent = 'PLAYER 1 IS A WINNER'
+                                } 
     } else {
-           clickedBox.textContent = 'O'
-           whosTurn = player1
-        }
+        clickedBox.textContent = 'O'
+        currentPlayer = player1
+        if (b1.textContent == 'O' && b2.textContent == 'O' && b3.textContent == 'O'){
+            winnerMessage.textContent = 'PLAYER 2 IS A WINNER'
+        } else if (b4.textContent == 'O' && b5.textContent == 'O' && b6.textContent == 'O'){
+            winnerMessage.textContent = 'PLAYER 2 IS A WINNER'
+            } else if (b7.textContent == 'O' && b8.textContent == 'O' && b9.textContent == 'O'){
+                winnerMessage.textContent = 'PLAYER 2 IS A WINNER'
+                } else if (b1 .textContent == 'O' && b4.textContent == 'O' && b7.textContent == 'O'){
+                    winnerMessage.textContent = 'PLAYER 2 IS A WINNER' 
+                    } else if (b2.textContent == 'O' && b5.textContent == 'O' && b8.textContent == 'O'){
+                        winnerMessage.textContent = 'PLAYER 2 IS A WINNER'
+                        } else if (b3.textContent == 'O' && b6.textContent == 'O' && b9.textContent == 'O'){
+                            winnerMessage.textContent = 'PLAYER 2 IS A WINNER'
+                            } else if (b1.textContent == 'O' && b5.textContent == 'O' && b9.textContent == 'O'){
+                                winnerMessage.textContent = 'PLAYER 2 IS A WINNER'
+                                } else if (b3.textContent == 'O' && b5.textContent == 'O' && b7.textContent == 'O') {
+                                    winnerMessage.textContent = 'PLAYER 2 IS A WINNER'
+                                } 
+    }
+   
 })
 
-//winning conditions
-for (var i = 1; i < 10; i++)
-if (b1 === X && b2 === X && b3 === X){
+
+
+
+
+    //   if (b1.textContent == 'X' && b2.textContent == 'X' && b3.textContent == 'X'){
+    //             winnerMessage.textContent = 'WINNER'
+     
+        // }   else if (b4.textContent == 'X' && b5.textContent == 'X' && b6.textContent == 'X'){
+    //             winnerMessage.textContent = 'WINNER'
+
+    //             } else if (b7.textContent == 'X' && b8.textContent == 'X' && b9.textContent == 'X'){
+    //                 winnerMessage.textContent = 'WINNER'
+            
+    //                  } else if (b1.textContent == 'X' && b4.textContent == 'X' && b7.textContent == 'X'){
+    //                     winnerMessage.textContent = 'WINNER'
+            
+    //                     } else if (b2.textContent == 'X' && b5.textContent == 'X' && b8.textContent == 'X'){
+    //                         winnerMessage.textContent = 'WINNER'
+            
+    //                         } else if (b3.textContent == 'X' && b6.textContent == 'X' && b9.textContent == 'X'){
+    //                             winnerMessage.textContent = 'WINNER'
+            
+    //                             } else if (b1.textContent == 'X' && b5.textContent == 'X' && b9 .textContent == 'X'){
+    //                                 winnerMessage.textContent = 'WINNER'
+            
+    //                                 } else if (b3.textContent == 'X' && b5.textContent == 'X' && b7.textContent == 'X'){
+    //                                     winnerMessage.textContent = 'WINNER'
+
+        // }else {
+        //                                     clickedBox.textContent = 'O';
+        //                                     currentPlayer = player1
+        //     } if (b1.textContent == 'O' && b2.textContent == 'O' && b3.textContent == 'O'){
+        //         winnerMessage.textContent = 'WINNER'
     
-}
+        //    } if (b4.textContent == 'O' && b5.textContent == 'O' && b6.textContent == 'O'){
+        //         winnerMessage.textContent = 'WINNER'
+   
+        //    } else if (b7.textContent == 'O' && b8.textContent == 'O' && b9.textContent == 'O'){
+        //         winnerMessage.textContent = 'WINNER'
+
+        //    } else if (b1 .textContent == 'O' && b4.textContent == 'O' && b7.textContent == 'O'){
+        //         winnerMessage.textContent = 'WINNER' 
+
+        //    } else if (b2.textContent == 'O' && b5.textContent == 'O' && b8.textContent == 'O'){
+        //         winnerMessage.textContent = 'WINNER'
+               
+        //    } else if (b3.textContent == 'O' && b6.textContent == 'O' && b9.textContent == 'O'){
+        //         winnerMessage.textContent = 'WINNER'
+               
+        //    } else if (b1.textContent == 'O' && b5.textContent == 'O' && b9.textContent == 'O'){
+        //         winnerMessage.textContent = 'WINNER'
+               
+        //    } else if (b3.textContent == 'O' && b5.textContent == 'O' && b7.textContent == 'O') {
+        //         winnerMessage.textContent = 'WINNER'
+                
+        //    } 
+       
+
+
 
 
 
