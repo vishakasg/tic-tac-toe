@@ -64,10 +64,8 @@ board.addEventListener("click", function (event) {
                                     winnerMessage.textContent = 'PLAYER 2 IS A WINNER'
                                     } else if (b3.textContent == 'O' && b5.textContent == 'O' && b7.textContent == 'O') {
                                         winnerMessage.textContent = 'PLAYER 2 IS A WINNER'
-                                        } 
-                          
-                                
-    } else if (board.textContent !== '' && ( board.textContent == 'X' || board.textContent == 'O')){
+                                        }                             
+    } else if ((b1.textContent == 'X' || b1.textContent == 'O') && (b2.textContent == 'X' || b2.textContent == 'O') && (b3.textContent == 'X' || b3.textContent == 'O') && ( b4.textContent == 'X' || b4.textContent == 'O') && (b5.textContent == 'X' || b5.textContent == 'O') && (b6.textContent == 'X' || b6.textContent == 'O') && ( b7.textContent == 'X' || b7.textContent == 'O') && (b8.textContent == 'X' || b8.textContent == 'O') && (b9.textContent == 'X' || b9.textContent == 'O')){
         winnerMessage.textContent = 'GAME IS DRAW'
     }
 

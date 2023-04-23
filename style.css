@@ -1,6 +1,12 @@
+body{
+    background-color: black;
+}
 h1{
-    color: darkslateblue;
+    color: greenyellow;
     text-align: center;
+    background-color: darkslateblue;
+    margin-left: 100px;
+    margin-right: 100px;
 }
 .players{
     display: flex;
@@ -31,7 +37,8 @@ h2{
     
     margin-top: 1em;
     font-size: 2rem;
-    font-family: 'Ewert', cursive;
+    font-family: 'Ewert', cursive
+    ;
     margin-bottom: 0.5em;
     color: greenyellow;
     background-color: darkslateblue;
