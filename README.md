@@ -14,7 +14,7 @@ My first solo project for the General Assembly SEI course is Tic Tac Toe. It is 
 ![](./Screen%20Shot%202023-04-23%20at%209.14.07%20pm.png)
 
 ## ✏️ Planning and Problem Solving
-- Since this project is my first significant entry into software engineering, it was essential for me to invest my time organising the structure of the programme, defining its components and how they interact, and taking small incremental steps rather than focusing  the final outcome straight away.
+- Since this project is my first project, it was essential for me to invest my time to organising the structure of the game, defining its components and how they interact, and taking small incremental steps rather than focusing  the final outcome straight away.
 - I used my knowledge of HTML, CSS, and Javascript to create a functional game.
 - I created the HTML file and applied some fundamental CSS styling after sketching  a wireframe diagram and going over my user stories. Then I worked through the game logic by making a flow chart to find a solution to the issue of identifying user clicks on the board and switching the board component in accordance with the game's specifications.
 - After I began manipulating the DOM using javascript, I felt somewhat more confident about the work I'm doing.
