@@ -8,7 +8,10 @@ My first solo project for the General Assembly SEI course is Tic Tac Toe. It is 
 - On a 3x3 grid, players take turns selecting their moves in turn. 
 - The winner is the first person to successfully occupy three adjacent slots in a row, column, or diagonal. 
 - If neither player has won and all available spots on the board have been taken, the game is a draw.
-- Add in-app screenshots.
+- In-app screenshots.
+![](./Screen%20Shot%202023-04-23%20at%209.10.52%20pm.png)
+![](./Screen%20Shot%202023-04-23%20at%209.11.58%20pm.png)
+![](./Screen%20Shot%202023-04-23%20at%209.14.07%20pm.png)
 
 ## ✏️ Planning and Problem Solving
 - Since this project is my first significant entry into software engineering, it was essential for me to invest my time organising the structure of the programme, defining its components and how they interact, and taking small incremental steps rather than focusing  the final outcome straight away.
@@ -31,13 +34,19 @@ My first solo project for the General Assembly SEI course is Tic Tac Toe. It is 
 - JavaScript
 - DOM API
 - Git and GitHub
-- Google Fonts
 
 ## 😱 Bug to Fix 💩
-- 
-- Anything a lot broken
-- Buttons to not click too many times (cause its broken 😒 )
+- Remove the 'click' eventListener to prevent players from clicking on the same box more than once.
+- To display a message when a game draws, codes must be placed correctly.
+- The grid disappears as I move the pointer inside of it, and I have to reload the page to see it again.
+- Allow players to customized their token(X or O).
+
 ## 😭 Lessons learnt
-What I would do differently if I could wind back the clock...
+Since this project is my first significant entry into software engineering, my major objective was to complete the task within the allotted time while also increasing my level of proficiency with coding. The use of DOM manipulation was the biggest challenge, but it was a great chance for me to put what I had learnt into practise and advance my capacity to figure out the logic and build the game using  JavaScript, HTML and CSS.
+
 ## ✅ Future features
-Cool things I would add if I can keep working on this
+- Keep track of multiple game rounds with a win counter.
+- Allow players to add their name and profile pictures
+- Use less repetitive codes.
+- Add a restart button to begin a new game round.
+- Add a scoreboard.
