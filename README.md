@@ -12,6 +12,8 @@ My first solo project for the General Assembly SEI course is Tic Tac Toe. It is 
 ![](./Screen%20Shot%202023-04-23%20at%209.10.52%20pm.png)
 ![](./Screen%20Shot%202023-04-23%20at%209.11.58%20pm.png)
 ![](./Screen%20Shot%202023-04-23%20at%209.14.07%20pm.png)
+![](./Screen%20Shot%202023-04-24%20at%2011.33.48%20am.png)
+![](./Screen%20Shot%202023-04-24%20at%2012.48.44%20pm.png)
 
 ## ✏️ Planning and Problem Solving
 - Since this project is my first project, it was essential for me to invest my time to organising the structure of the game, defining its components and how they interact, and taking small incremental steps rather than focusing  the final outcome straight away.
@@ -36,17 +38,15 @@ My first solo project for the General Assembly SEI course is Tic Tac Toe. It is 
 - Git and GitHub
 
 ## 😱 Bug to Fix 💩
-- Remove the 'click' eventListener to prevent players from clicking on the same box more than once.
-- To display a message when a game draws, codes must be placed correctly.
 - The grid disappears as I move the pointer inside of it, and I have to reload the page to see it again.
+- Need to style 'Restart' button.
 - Allow players to customized their token(X or O).
 
 ## 😭 Lessons learnt
-Since this project is my first significant entry into software engineering, my major objective was to complete the task within the allotted time while also increasing my level of proficiency with coding. The use of DOM manipulation was the biggest challenge, but it was a great chance for me to put what I had learnt into practise and advance my capacity to figure out the logic and build the game using  JavaScript, HTML and CSS.
+Since this project is my first significant entry into software engineering, my major objective was to complete the task within the allotted time while also increasing my level of proficiency with coding. The major hurdles were using DOM manipulation and understanding the logic required for appropriate coding.But it was a great chance for me to put what I had learnt into practise and advance my capacity to figure out the logic and build the game using  JavaScript, HTML and CSS.
 
 ## ✅ Future features
-- Keep track of multiple game rounds with a win counter.
+- Keep track of multiple game rounds.
 - Allow players to add their name and profile pictures
 - Use less repetitive codes.
-- Add a restart button to begin a new game round.
 - Add a scoreboard.

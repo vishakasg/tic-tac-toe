@@ -43,5 +43,14 @@ h2{
     color: greenyellow;
     background-color: darkslateblue;
     text-align: center;
+}
+#restart{
+    
+    background-color: greenyellow;
+    color: darkslateblue;
+    text-align: center;
+    border: 5px solid darkslateblue;
+    padding: 10px;
+
 
 }

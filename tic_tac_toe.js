@@ -25,10 +25,11 @@ var currentPlayer = player1
 var winnerMessage = document.querySelector('#winner')
 var countTheTurn = 0
 var isGameWin = false
+var reset = document.querySelector('#restart')
+
 board.addEventListener("click", function (event) {
     var clickedBox = event.target
-    if (currentPlayer === player1) {
-        if (clickedBox.textContent !== 'O')
+    if (currentPlayer === player1 && clickedBox.textContent === '') {
         clickedBox.textContent = 'X' 
         countTheTurn++;
         currentPlayer = player2
@@ -59,8 +60,7 @@ board.addEventListener("click", function (event) {
                 winnerMessage.textContent = 'PLAYER 1 IS A WINNER'
             } 
 
-    } else if (currentPlayer === player2){
-        if (clickedBox.textContent !== 'X')
+    } else if (currentPlayer === player2 && clickedBox.textContent !== 'X'){
         clickedBox.textContent = 'O'
         countTheTurn++;
         currentPlayer = player1
@@ -90,11 +90,28 @@ board.addEventListener("click", function (event) {
             } else if (b3.textContent == 'O' && b5.textContent == 'O' && b7.textContent == 'O') {
                 isGameWin = true;
                 winnerMessage.textContent = 'PLAYER 2 IS A WINNER'
-            }                         
+            } 
     } 
     if (countTheTurn === 9 && isGameWin === false) {
         winnerMessage.textContent = 'GAME IS DRAW'
-    }    
+    }  
+    if (isGameWin === true || (countTheTurn === 9 && isGameWin === false)){
+        reset.addEventListener('click', function(event){
+            var clickedButton = event.target
+            b1.textContent = ''
+            b2.textContent = ''
+            b3.textContent = ''
+            b4.textContent = ''
+            b5.textContent = ''
+            b6.textContent = ''
+            b7.textContent = ''
+            b8.textContent = ''
+            b9.textContent = ''
+            winnerMessage.textContent = ''
+            currentPlayer = player1
+        })
+    }                       
+     
 })
 
 
