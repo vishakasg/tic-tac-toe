@@ -28,6 +28,7 @@ var isGameWin = false
 board.addEventListener("click", function (event) {
     var clickedBox = event.target
     if (currentPlayer === player1) {
+        if (clickedBox.textContent !== 'O')
         clickedBox.textContent = 'X' 
         countTheTurn++;
         currentPlayer = player2
@@ -59,7 +60,7 @@ board.addEventListener("click", function (event) {
             } 
 
     } else if (currentPlayer === player2){
-        if (clickedBox.textContent == '')
+        if (clickedBox.textContent !== 'X')
         clickedBox.textContent = 'O'
         countTheTurn++;
         currentPlayer = player1
