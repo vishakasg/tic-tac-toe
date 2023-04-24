@@ -38,26 +38,28 @@ board.addEventListener("click", function (event) {
             } else if (b4.textContent == 'X' && b5.textContent == 'X' && b6.textContent == 'X'){
                 isGameWin = true;
                 winnerMessage.textContent = 'PLAYER 1 IS A WINNER'
-                }  else if (b7.textContent == 'X' && b8.textContent == 'X' && b9.textContent == 'X'){
-                    isGameWin = true;
-                    winnerMessage.textContent = 'PLAYER 1 IS A WINNER'
-                    } else if (b1.textContent == 'X' && b4.textContent == 'X' && b7.textContent == 'X'){
-                        isGameWin = true;
-                        winnerMessage.textContent = 'PLAYER 1 IS A WINNER'
-                        } else if (b2.textContent == 'X' && b5.textContent == 'X' && b8.textContent == 'X'){
-                            isGameWin = true;
-                            winnerMessage.textContent = 'PLAYER 1 IS A WINNER'
-                            } else if (b3.textContent == 'X' && b6.textContent == 'X' && b9.textContent == 'X'){
-                                isGameWin = true;
-                                winnerMessage.textContent = 'PLAYER 1 IS A WINNER'
-                                } else if (b1.textContent == 'X' && b5.textContent == 'X' && b9 .textContent == 'X'){
-                                    isGameWin = true;
-                                    winnerMessage.textContent = 'PLAYER 1 IS A WINNER'
-                                    } else if (b3.textContent == 'X' && b5.textContent == 'X' && b7.textContent == 'X'){
-                                        isGameWin = true;
-                                        winnerMessage.textContent = 'PLAYER 1 IS A WINNER'
-                                        } 
+            }  else if (b7.textContent == 'X' && b8.textContent == 'X' && b9.textContent == 'X'){
+                isGameWin = true;
+                winnerMessage.textContent = 'PLAYER 1 IS A WINNER'
+            } else if (b1.textContent == 'X' && b4.textContent == 'X' && b7.textContent == 'X'){
+                isGameWin = true;
+                winnerMessage.textContent = 'PLAYER 1 IS A WINNER'
+            } else if (b2.textContent == 'X' && b5.textContent == 'X' && b8.textContent == 'X'){
+                isGameWin = true;
+                winnerMessage.textContent = 'PLAYER 1 IS A WINNER'
+            } else if (b3.textContent == 'X' && b6.textContent == 'X' && b9.textContent == 'X'){
+                isGameWin = true;
+                winnerMessage.textContent = 'PLAYER 1 IS A WINNER'
+            } else if (b1.textContent == 'X' && b5.textContent == 'X' && b9 .textContent == 'X'){
+                isGameWin = true;
+                winnerMessage.textContent = 'PLAYER 1 IS A WINNER'
+            } else if (b3.textContent == 'X' && b5.textContent == 'X' && b7.textContent == 'X'){
+                isGameWin = true;
+                winnerMessage.textContent = 'PLAYER 1 IS A WINNER'
+            } 
+
     } else if (currentPlayer === player2){
+        if (clickedBox.textContent == '')
         clickedBox.textContent = 'O'
         countTheTurn++;
         currentPlayer = player1
@@ -69,29 +71,29 @@ board.addEventListener("click", function (event) {
             } else if (b4.textContent == 'O' && b5.textContent == 'O' && b6.textContent == 'O'){
                 isGameWin = true;
                 winnerMessage.textContent = 'PLAYER 2 IS A WINNER'
-                } else if (b7.textContent == 'O' && b8.textContent == 'O' && b9.textContent == 'O'){
-                    isGameWin = true;
-                    winnerMessage.textContent = 'PLAYER 2 IS A WINNER'
-                    } else if (b1 .textContent == 'O' && b4.textContent == 'O' && b7.textContent == 'O'){
-                        isGameWin = true;
-                        winnerMessage.textContent = 'PLAYER 2 IS A WINNER' 
-                        } else if (b2.textContent == 'O' && b5.textContent == 'O' && b8.textContent == 'O'){
-                            isGameWin = true;
-                            winnerMessage.textContent = 'PLAYER 2 IS A WINNER'
-                            } else if (b3.textContent == 'O' && b6.textContent == 'O' && b9.textContent == 'O'){
-                                isGameWin = true;
-                                winnerMessage.textContent = 'PLAYER 2 IS A WINNER'
-                                } else if (b1.textContent == 'O' && b5.textContent == 'O' && b9.textContent == 'O'){
-                                    isGameWin = true;
-                                    winnerMessage.textContent = 'PLAYER 2 IS A WINNER'
-                                    } else if (b3.textContent == 'O' && b5.textContent == 'O' && b7.textContent == 'O') {
-                                        isGameWin = true;
-                                        winnerMessage.textContent = 'PLAYER 2 IS A WINNER'
-                                        }                           
-    } if (countTheTurn == 9 && isGameWin == false) {
+            } else if (b7.textContent == 'O' && b8.textContent == 'O' && b9.textContent == 'O'){
+                isGameWin = true;
+                winnerMessage.textContent = 'PLAYER 2 IS A WINNER'
+            } else if (b1 .textContent == 'O' && b4.textContent == 'O' && b7.textContent == 'O'){
+                isGameWin = true;
+                winnerMessage.textContent = 'PLAYER 2 IS A WINNER' 
+            } else if (b2.textContent == 'O' && b5.textContent == 'O' && b8.textContent == 'O'){
+                isGameWin = true;
+                winnerMessage.textContent = 'PLAYER 2 IS A WINNER'
+            } else if (b3.textContent == 'O' && b6.textContent == 'O' && b9.textContent == 'O'){
+                isGameWin = true;
+                winnerMessage.textContent = 'PLAYER 2 IS A WINNER'
+            } else if (b1.textContent == 'O' && b5.textContent == 'O' && b9.textContent == 'O'){
+                isGameWin = true;
+                winnerMessage.textContent = 'PLAYER 2 IS A WINNER'
+            } else if (b3.textContent == 'O' && b5.textContent == 'O' && b7.textContent == 'O') {
+                isGameWin = true;
+                winnerMessage.textContent = 'PLAYER 2 IS A WINNER'
+            }                         
+    } 
+    if (countTheTurn === 9 && isGameWin === false) {
         winnerMessage.textContent = 'GAME IS DRAW'
-    }  
-
+    }    
 })
 
 
